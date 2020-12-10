@@ -24,3 +24,8 @@ describe("Range (7,11)  Endpoints ShouldBe{8,10}", function(){
         expect(methods.EndPoints("(7,11)")).to.be.eqls([8,10])
     });
 });
+describe("Range(3, 8] areEqual[4, 9)", function(){
+    it("Should return: {8,10}", function(){
+        expect(methods.AreEquals("(3, 8]","[4, 9)")).to.be.eqls(true)
+    });
+});
