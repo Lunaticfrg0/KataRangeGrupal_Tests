@@ -84,5 +84,9 @@ describe("Range[7, 11) Doesntcontains [4,11]", function () {
         expect(methods.Contains("[7, 11)", "[4,11]")).to.be.eqls(false)
     });
 });
-
+describe("Range[2,5) Doesntcontains (2,10]", function () {
+    it("Should return: false", function () {
+        expect(methods.Contains("[2,5)", "(2,10]")).to.be.eqls(false)
+    });
+});
 
