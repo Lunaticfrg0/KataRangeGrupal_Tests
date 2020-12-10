@@ -74,4 +74,9 @@ describe("Range(4,7) containsRange {5,6}", function () {
         expect(methods.Contains("(4,7)", "{5,6}")).to.be.eqls(true)
     });
 });
+describe("Range(2,10] containsRange [5,9)", function () {
+    it("Should return: true", function () {
+        expect(methods.Contains("(2,10]", "[5,9)")).to.be.eqls(true)
+    });
+});
 
