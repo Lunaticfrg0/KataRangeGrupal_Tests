@@ -59,3 +59,8 @@ describe("Range [5, 9] getAllPoints {5,6,7,8,9}", function () {
         expect(methods.GetAllPoints("[5, 9]")).to.be.eqls([5,6,7,8,9])
     });
 });
+describe("Range [7,11) getAllPoints {7,8,9,10}", function () {
+    it("Should return: {7,8,9,10}", function () {
+        expect(methods.GetAllPoints("[7, 11)")).to.be.eqls([7,8,9,10])
+    });
+});
