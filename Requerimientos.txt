@@ -35,4 +35,4 @@
    --17: Range (4,8) areEqual [5,7]
    18: Range [2,5) doesn'tContain (2,10]
    19: Range (2,10] contain [5,9) 
-   20: Range [7,13) not equals (2,4]
+   --20: Range [7,13) not equals (2,4]
