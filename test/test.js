@@ -104,12 +104,3 @@ describe("Range [2,5) doesn't overlap [7,10)", function () {
         expect(methods.Overlaps("[2,5)", "[7,10)")).to.be.eqls(false)
     });
 });
-
-
-
-
-
-
-
-
-
