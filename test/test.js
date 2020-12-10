@@ -19,3 +19,8 @@ describe("Range (2,6)  Endpoints ShouldBe{3,5}", function(){
         expect(methods.EndPoints("(2,6)")).to.be.eqls([3,5])
     });
 });
+describe("Range (7,11)  Endpoints ShouldBe{8,10}", function(){
+    it("Should return: {8,10}", function(){
+        expect(methods.EndPoints("(7,11)")).to.be.eqls([8,10])
+    });
+});
