@@ -50,7 +50,7 @@ Contains = (a, b) =>{
 Overlaps = (r1, r2) => {
     const [L1,R1] = EndPoints(r1);
     const [L2,R2] = EndPoints(r2);
-    return L1 <= L2 || R1 <= R2;
+    return L1 >= L2 || R1 >= R2;
 }
 
 module.exports = {
