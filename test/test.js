@@ -99,9 +99,9 @@ describe("Range (3,10] doesn't overlap (11,16)", function () {
         expect(methods.Overlaps("(3,10]", "(11,16)")).to.be.eqls(false)
     });
 });
-describe("Range (3,10] doesn't overlap (11,16)", function () {
+describe("Range [2,5) doesn't overlap [7,10)", function () {
     it("Should return: false", function () {
-        expect(methods.Overlaps("(3,10]", "(11,16)")).to.be.eqls(false)
+        expect(methods.Overlaps("[2,5)", "[7,10)")).to.be.eqls(false)
     });
 });
 
