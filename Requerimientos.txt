@@ -22,7 +22,7 @@
    --04: Range (7,11) EndPoints ShouldBe {8,10}
    --05: Range(3, 8] areEqual[4, 9)
   --06: Range [5,6) areEqual (4,5]
-   07: Range (2,10] getAllPoints {3,4,5,6,7,8,9,10}
+    --07: Range (2,10] getAllPoints {3,4,5,6,7,8,9,10}
    08: Range [5, 9] getAllPoints {5,6,7,8,9}
    09: Range [7, 11) Doesn't Contain [4,11]
    10: Range(2, 10] containsRange [5, 9)

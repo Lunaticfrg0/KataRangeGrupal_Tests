@@ -19,8 +19,23 @@ EndPoints = (r) =>{
     else r1 = R.nums[R.nums.length -1];
     return [l1, r1];
 }
+GetAllPoints = (r) =>{
+    const R = ParseInput(r);
+    let l1, r1;
+    if(R.leftP === '(') l1 = R.nums[0] +1;
+    else l1 = R.nums[0];
+    if(R.rightP === ')') r1 = R.nums[R.nums.length - 1] - 1;
+    else r1 = R.nums[R.nums.length - 1];
+    const res = [];
+    for (let i = l1; i <= r1; i++){
+        res.push(i)
+    }
+    return res;
+    
+}
 
 module.exports = {
     EndPoints : EndPoints,
     AreEquals : AreEquals,
+    GetAllPoints : GetAllPoints
 }

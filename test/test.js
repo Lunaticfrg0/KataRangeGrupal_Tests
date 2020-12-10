@@ -49,4 +49,8 @@ describe("Range[7,13) NotEqual(2,4]", function () {
         expect(methods.AreEquals("[7,13)", "(2,4]")).to.be.eqls(false)
     });
 });
-
+describe("Range (2,10] getAllPoints {3,4,5,6,7,8,9,10}", function () {
+    it("Should return: {3,4,5,6,7,8,9,10}", function () {
+        expect(methods.GetAllPoints("(2,10]")).to.be.eqls([3,4,5,6,7,8,9,10])
+    });
+});
