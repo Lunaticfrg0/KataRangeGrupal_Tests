@@ -29,3 +29,9 @@ describe("Range(3, 8] areEqual[4, 9)", function(){
         expect(methods.AreEquals("(3, 8]","[4, 9)")).to.be.eqls(true)
     });
 });
+describe("Range[5, 6) areEqual(4, 5]", function () {
+    it("Should return: {8,10}", function () {
+        expect(methods.AreEquals("[5, 6)", "(4, 5]")).to.be.eqls(true)
+    });
+});
+
