@@ -39,4 +39,9 @@ describe("Range(4,8) areEqual[5,7]", function () {
         expect(methods.AreEquals("(4,8)", "[5,7]")).to.be.eqls(true)
     });
 });
+describe("Range[7,11) NotEqual(2,4]", function () {
+    it("Should return: false", function () {
+        expect(methods.AreEquals("[7,11)", "(2,4]")).to.be.eqls(false)
+    });
+});
 
