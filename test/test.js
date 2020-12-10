@@ -89,4 +89,9 @@ describe("Range[2,5) Doesntcontains (2,10]", function () {
         expect(methods.Contains("[2,5)", "(2,10]")).to.be.eqls(false)
     });
 });
+describe("Range[3,5) Overlaps (2,10]", function () {
+    it("Should return: true", function () {
+        expect(methods.Overlaps("[3,5)", "(2,10]")).to.be.eqls(true)
+    });
+});
 

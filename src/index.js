@@ -47,10 +47,16 @@ Contains = (a, b) =>{
     else r2 = B.nums[B.nums.length - 1]
     return l1 <= l2 && r1 >= r2
 }
+Overlaps = (r1, r2) => {
+    const [L1,R1] = EndPoints(r1);
+    const [L2,R2] = EndPoints(r2);
+    return L1 <= L2 || R1 <= R2;
+}
 
 module.exports = {
     EndPoints : EndPoints,
     AreEquals : AreEquals,
     GetAllPoints : GetAllPoints,
-    Contains: Contains
+    Contains: Contains,
+    Overlaps : Overlaps
 }
