@@ -33,9 +33,24 @@ GetAllPoints = (r) =>{
     return res;
     
 }
+Contains = (a, b) =>{
+    const A = ParseInput(a);
+    const B = ParseInput(b);
+    let l1, l2, r1, r2;
+    if(A.leftP === "(") l1 = A.nums[0]+1
+    else l1 = A.nums[0]
+    if (A.leftP === ")") r1 = A.nums[A.nums.length - 1] -1;
+    else r1 = A.nums[A.nums.length-1]
+    if (B.leftP === "(") l2 = B.nums[0] + 1
+    else l2 = B.nums[0]
+    if (B.leftP === ")") r2 = B.nums[B.nums.length - 1] - 1;
+    else r2 = B.nums[B.nums.length - 1]
+    return l1 <= l2 && r1 >= r2
+}
 
 module.exports = {
     EndPoints : EndPoints,
     AreEquals : AreEquals,
-    GetAllPoints : GetAllPoints
+    GetAllPoints : GetAllPoints,
+    Contains: Contains
 }

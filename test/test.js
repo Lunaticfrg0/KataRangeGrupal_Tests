@@ -64,3 +64,8 @@ describe("Range [7,11) getAllPoints {7,8,9,10}", function () {
         expect(methods.GetAllPoints("[7, 11)")).to.be.eqls([7,8,9,10])
     });
 });
+describe("Range(2, 10] containsRange [5, 9)", function () {
+    it("Should return: {7,8,9,10}", function () {
+        expect(methods.Contains("(2, 10]", "[5, 9)")).to.be.eqls(true)
+    });
+});
